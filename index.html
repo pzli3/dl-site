@@ -3,10 +3,10 @@
 		<title>dl-site</title>
 	</header>
 	<body>
-		<form action="http://dl-site.s3-website-us-west-2.amazonaws.com/" method="post" enctype="multipart/form-data">
+		<form action="https://dl-site.s3.amazonaws.com" method="post" enctype="multipart/form-data">
 			<input type="text" name="key" value="testfile.txt" />
-			<input type="text" name="acl" value="public-read" />
-			<input type="text" name="content-type" value="text/plain" />
+			<input type="text" name="acl" value="full-control" />
+			<input type="text" name="content-type" value="text/image" />
 			<input type="hidden" name="AWSAccessKeyId" value="AKIAIS3WCTNFJSHZWMHA" />
 			<input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMTktMDEtMDFUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJkbC1zaXRlIiB9LAogICAgeyJhY2wiOiAiRlVMTF9DT05UUk9MIiB9LAogICAgWyJlcSIsICIka2V5IiwgInRlc3RmaWxlLnR4dCJdLAogICAgWyJzdGFydHMtd2l0aCIsICIkQ29udGVudC1UeXBlIiwgImltYWdlLyJdLAogIF0KfQo=" />
 			<input type="hidden" name="signature" value="bJYGgXnvR+ycgmG1UwrKi+V1cmE=" />
