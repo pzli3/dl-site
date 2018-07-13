@@ -3,13 +3,13 @@
 		<title>dl-site</title>
 	</header>
 	<body>
-		<form action="https://dl-site.s3.amazonaws.com" method="post" enctype="multipart/form-data">
-			<input type="hidden" name="key" value="user/basic" />
-			<input type="hidden" name="acl" value="public-read" />
-			<input type="hidden" name="content-type" value="application/octet-stream" />
-			<input type="hidden" name="AWSAccessKeyId" value="AKIAIR3LYS2ZCNVCWTPQ" />
-			<input type="hidden" name="policy" value="eyAKImV4cGlyYXRpb24iOiAiMjAxOS0xMi0wMVQxMjowMDowMC4wMDBaIiwKICAiY29uZGl0aW9ucyI6IFsKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIiB9LAogICAgeyJidWNrZXQiOiAiZGwtc2l0ZSIgfQogIF0KfQ==" />
-			<input type="hidden" name="signature" value="+AwFRk1siZCz1H4z/hOqQxn9psU=" />
+		<form action="http://s3.amazonaws.com/dl-site" method="post" enctype="multipart/form-data">
+			<input type="text" name="key" value="testfile.txt" />
+			<input type="text" name="acl" value="public-read" />
+			<input type="text" name="content-type" value="text/plain" />
+			<input type="hidden" name="AWSAccessKeyId" value="AKIAIS3WCTNFJSHZWMHA" />
+			<input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMTktMDEtMDFUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJkbC1zaXRlIiB9LAogICAgeyJhY2wiOiAiRlVMTF9DT05UUk9MIiB9LAogICAgWyJlcSIsICIka2V5IiwgInRlc3RmaWxlLnR4dCJdLAogICAgWyJzdGFydHMtd2l0aCIsICIkQ29udGVudC1UeXBlIiwgImltYWdlLyJdLAogIF0KfQo=" />
+			<input type="hidden" name="signature" value="bJYGgXnvR+ycgmG1UwrKi+V1cmE=" />
 			<input name="file" type="file" />
 			<input name="submit" value="Upload" type="submit" />
 		</form>
