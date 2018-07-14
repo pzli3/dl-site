@@ -5,14 +5,14 @@
 	</head>
 	<body>
 		<form action="https://dl-site.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
-			<input type="text" name="key" value="/photos/${filename}" />
-			<input type="text" name="acl" value="public-read" />
-			<input type="text" name="content-type" value="image/" />
+			<input type="hidden" name="key" value="photos/${filename}" />
+			<input type="hidden" name="acl" value="public-read" />
+			<input type="hidden" name="content-type" value="image/png" />
 			<input type="hidden" name="AWSAccessKeyId" value="AKIAIJP5XMCE2JS3PPAQ" />
-			<input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMTktMDEtMDFUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJkbC1zaXRlIiB9LAogICAgeyJhY2wiOiAicHVibGljLXJlYWQiIH0sCiAgICBbInN0YXJ0cy13aXRoIiwgIiRrZXkiLCAiL3Bob3Rvcy8iXSwgCiAgICBbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAiaW1hZ2UvIl0sCiAgXQp9Cg==" />
-			<input type="hidden" name="signature" value="d2NBPHll5GsSubJNympibklL8sc=" />
+			<input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMTktMDEtMDFUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJkbC1zaXRlIiB9LAogICAgeyJhY2wiOiAicHVibGljLXJlYWQiIH0sCiAgICBbInN0YXJ0cy13aXRoIiwgIiRrZXkiLCAicGhvdG9zLyJdLCAKICAgIFsic3RhcnRzLXdpdGgiLCAiJENvbnRlbnQtVHlwZSIsICJpbWFnZS8iXSwKICBdCn0K" />
+			<input type="hidden" name="signature" value="gWaO9uwqcSjhq88s2IrZhuJBKok=" />
 			<input name="file" type="file" />
 			<input name="submit" value="Upload" type="submit" />
-</form>
+		</form>
 	</body>
 </html>
