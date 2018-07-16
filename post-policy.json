@@ -16,6 +16,6 @@
       "starts-with",
       "$Content-Type",
       "image\/"
-    ],
+    ]
   ]
 }
